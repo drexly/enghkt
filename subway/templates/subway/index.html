@@ -1,0 +1,132 @@
+{% extends "subway/base.html" %}
+
+		<!-- Wrapper -->
+
+		{% block body %}
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>캠퍼스 강의실을 위한 전력 절감 솔루션</h1>
+							</header>
+							<div class="content">
+								<p>에너지 <br />
+								스크루지</p>
+								<ul class="actions">
+									<li><a href="#two" class="button next scrolly">IoT 시스템+딥러닝 알고리즘</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+							<section id="forum">
+								<div class="inner">
+									<header class="forum">
+										<center><h3>‘사람이 있으면, 빛이 있으라’</h3></center>
+									</header>
+
+
+									<div class="box" onclick="location.href='/subway/1bz'">
+									<h1>
+										 절약 시작!
+									</h1>
+									</div>
+								</div>
+							</section>
+
+				<!-- Main -->
+					<div id="main">
+
+
+
+
+
+						<!-- One -->
+							<section id="two" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/icon/history.jp" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url "subway:1bz" %}" class="link">수강 시간표</a></h3>
+										<p>공강때도 불이 켜져있나요?</p>
+										<p>에너지 스크루지가 꺼드리겠습니다!</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/icon/department.jp" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'subway:2em'%}" class="link">실내 전원 관리</a></h3>
+										<p>강의실, 강의동의 미세전원관리</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/icon/gallery.jp" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'subway:3my'%}" class="link">조도 센서 IoT</a></h3>
+										<p>실시간으로 전력 사용 체킹</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/icon/contact.jp" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'subway:4vs' %}" class="link">강의실 현황</a></h3>
+										<p>가장 가까운 절전 최적 빈강의실 탐색</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'subway:5vs'%}" class="link">빈강의실 알리미</a></h3>
+										<p>절전에 최적화된 빈강의실을 SMS!</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'subway:6fd'%}" class="link">피크 머신러닝</a></h3>
+										<p>DBN(Deep Belief Networks) machine learning 전력패턴 시뮬레이션</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'subway:chat'%}" class="link">사업 현황</a></h3>
+										<p>전국 초!중!고!에 적용된 전력절감솔루션</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'subway:search'%}" class="link">고객 센터</a></h3>
+										<p>전력절감솔루션 관련 문의를 해주세요</p>
+									</header>
+								</article>
+							</section>
+
+
+					</div>
+
+				<!-- Contact -->
+
+
+				<!-- Footer -->
+
+			</div>
+		{% endblock %}
+		<!-- Scripts -->
