@@ -1,1 +1,116 @@
-{%extends "subway/bindex.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        {% load static from staticfiles %}
+
+        <!--bs 합쳐지고 최소화된 최신 CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>에너지 스크루지</title>
+    <script>
+function url() {
+    return ("https://cova-e7bad.firebaseapp.com/"+document.getElementById('place').value);
+
+}
+</script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="../">engscrg</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="../"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../1bz">수강 시간표</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="../2em">실내 전원 관리</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../4vs">강의실 현황</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="../3my">조도 센서 IoT</a>
+                    </li>
+
+                     <li>
+                        <a class="page-scroll" href="../5cm">빈강의실 알리미</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="../6fd">전력낭비패턴 딥러닝</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="../chat">사업 현황</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../search">고객 센터</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+                <br>
+               <br>
+    <section id="intro" class="intro-section">
+     <div class="container">
+  <h2>조명전력 단계별 절감계획</h2>
+  <div class="well"><b style="font-size:20px;">Step 1 : </b><b style="font-size:20px;color:Blue;">수업중인 강의실만 ON 수업이 없으면 OFF</b><br><br>
+  <b style="font-size:20px;">Step 2 : </b><b style="font-size:20px;color:Blue;"> 수업이 있어도 맑은날은 필요한 만큼의 밝기만</b><br><br>
+  <b style="font-size:20px;">Step 3 : </b><b style="font-size:20px;color:Blue;"> 넓은강의실 공간 혼자쓰지말고 모여서 써요</b><br><br>
+  <b style="font-size:20px;">Step 4 : </b><b style="font-size:20px;color:Blue;"> 인원에 비해 큰 강의실을 빈번히 사용하는 패턴이 있으면 다음번엔 옮겨주세요</b>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+		  <img src="{% static "subway/images/powerManage.png" %}" class="img-rounded" alt="Cinque Terre">
+    </div>
+  </div>
+</div>
+    </section>
+<!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</body>
+
+</html>
+
+
+
+
+
+

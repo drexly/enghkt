@@ -1,1 +1,140 @@
-{%extends "subway/bindex.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        {% load static from staticfiles %}
+
+        <!--bs 합쳐지고 최소화된 최신 CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>에너지 스크루지</title>
+    <script>
+function url() {
+    return ("https://cova-e7bad.firebaseapp.com/"+document.getElementById('place').value);
+
+}
+</script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="../">engscrg</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                 <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="../"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../1bz">수강 시간표</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="../2em">실내 전원 관리</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../4vs">강의실 현황</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="../3my">조도 센서 IoT</a>
+                    </li>
+
+                     <li>
+                        <a class="page-scroll" href="../5cm">빈강의실 알리미</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="../6fd">전력낭비패턴 딥러닝</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="../chat">사업 현황</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../search">고객 센터</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+               <br>
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+               <div class="jumbotron text-center">
+  <h1>수강 시간표 모습</h1>
+  <p></p>
+  <p>대학교, 학원, 실험실, 평생 교육원, 강당 사람들이 모이는 곳은 열정으로 가득차지만 때론 쉬어갈때도 있습니다.</p>
+  <p>우리의 소중한 에너지도 함께 쉬어야 합니다.</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>대학교</h2>
+		  <p>대부분의 강의실은 공강시간이 있습니다</p>
+		  <img src="{% static "subway/images/timetable1.png" %}"  class="img-rounded" alt="Cinque Terre" width="300" height="236">
+    </div>
+    <div class="col-sm-4">
+       <h2>실험실</h2>
+		  <p>실험실은 항상 실험이 수행되지 않습니다</p>
+		  <img src="{% static "subway/images/timetable2.jpg" %}" class="img-rounded" alt="Cinque Terre" width="300" height="236">
+    </div>
+    <div class="col-sm-4">
+      <h2>평생교육원</h2>
+    	<p>지역 평생교육원도 마찬가지로 쉴때가 있습니다</p>
+     	<img src="{% static "subway/images/timetable3.jpeg" %}" class="img-rounded" alt="Cinque Terre" width="300" height="236">
+    </div>
+  </div>
+</div>
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="intro" class="intro-section">
+        <div class="container">
+	<div class="row">
+        <div class="col-md-6">
+
+        </div>
+	</div>
+</div>
+    </section>
+<!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</body>
+
+</html>
+
+
+
+
+
